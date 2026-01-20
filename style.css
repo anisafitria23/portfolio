@@ -1,4 +1,3 @@
-/* ================= GLOBAL RESET ================= */
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +6,12 @@
 }
 
 body {
-  background-color: #E9D9CB; /* Warna dasar krem seragam */
+  background-color: #E9D9CB; 
   color: #4A2E1F;
   overflow-x: hidden;
 }
 
-/* ================= NAVIGASI TENGAH (FIXED) ================= */
+/* NAVIGASI TENGAH */
 header {
   position: fixed;
   top: 20px;
@@ -60,13 +59,13 @@ header {
   color: #D7B49E;
 }
 
-/* ================= JARAK GLOBAL UNTUK SEMUA HALAMAN ================= */
+/* JARAK UNTUK SEMUA HALAMAN */
 /* Supaya konten tidak tertutup Navbar yang melayang */
 section, .home, .skills, .about-section, .project-section, .contact-section {
   padding-top: 140px !important; 
 }
 
-/* ================= HOME SECTION ================= */
+/* HOME */
 .home {
   min-height: 100vh;
   display: flex;
@@ -86,7 +85,7 @@ section, .home, .skills, .about-section, .project-section, .contact-section {
 }
 .photo-shape img { width: 95%; height: 100%; object-fit: contain; }
 
-/* ================= ABOUT SECTION ================= */
+/* ABOUT */
 .about-container {
   display: grid; grid-template-columns: 1fr 1.5fr;
   gap: 50px; align-items: center; max-width: 1000px; margin: 0 auto;
@@ -102,11 +101,10 @@ section, .home, .skills, .about-section, .project-section, .contact-section {
 }
 .about-text h1 { font-size: 42px; margin: 15px 0; }
 .about-text p { color: #6B4A3A; line-height: 1.8; margin-bottom: 20px; }
-/* Ganti bagian extra-item lama dengan ini agar berjajar rapi */
 .about-extra {
     display: flex;
-    flex-wrap: wrap;     /* Supaya kalau layar kekecilan dia otomatis turun rapi */
-    gap: 12px;           /* Jarak antar kotak */
+    flex-wrap: wrap;     
+    gap: 12px;          
     margin-top: 25px;
     justify-content: flex-start; 
 }
@@ -120,7 +118,7 @@ section, .home, .skills, .about-section, .project-section, .contact-section {
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.03);
     border: 1px solid rgba(215, 180, 158, 0.2);
-    white-space: nowrap; /* Mencegah teks tertekuk ke bawah dalam satu kotak */
+    white-space: nowrap; 
 }
 
 .extra-item i {
@@ -134,7 +132,7 @@ section, .home, .skills, .about-section, .project-section, .contact-section {
     color: #4A2E1F;
 }
 
-/* ================= SKILLS PAGE ================= */
+/* SKILLS */
 .skills-container { max-width: 900px; margin: 0 auto; }
 .skills h1 { font-size: 36px; margin-bottom: 16px; }
 .skills-desc { font-size: 16px; line-height: 1.8; color: #6B4A3A; margin-bottom: 48px; }
@@ -145,23 +143,23 @@ section, .home, .skills, .about-section, .project-section, .contact-section {
 }
 
 .about-image {
-  width: 100%;           /* Mengikuti lebar maksimal di bawah */
-  max-width: 350px;      /* KUNCI: Supaya foto tidak membesar/zoom berlebihan */
+  width: 100%;           
+  max-width: 350px;      
   border-radius: 30px; 
   overflow: hidden;
   box-shadow: 20px 20px 0px #D7B49E; 
   border: 5px solid white;
-  margin: 0 auto;        /* Biar tetap di tengah kalau di layar kecil */
+  margin: 0 auto;        
 }
 
 .about-image img { 
   width: 100%; 
-  height: auto;          /* Menjaga proporsi asli foto agar tidak lonjong/zoom */
+  height: auto;          
   display: block; 
-  object-fit: contain;   /* KUNCI: Foto akan tampil utuh, tidak terpotong */
+  object-fit: contain;   
 }
 
-/* ================= PROJECT SECTION ================= */
+/* PROJECT */
 .project-section {
   background-color: #efe1d1;
   padding: 80px 20px;
@@ -222,7 +220,7 @@ section, .home, .skills, .about-section, .project-section, .contact-section {
   text-decoration: underline;
 }
 
-/* ================= CONTACT SECTION (KEMBALI KE DESAIN AWAL) ================= */
+/* CONTACT*/
 .contact-section {
     text-align: center;
     padding: 140px 10% 80px;
@@ -253,7 +251,7 @@ section, .home, .skills, .about-section, .project-section, .contact-section {
     width: 100%;
     max-width: 500px; 
     
-    text-decoration: none; /* MENGHAPUS GARIS BIRU */
+    text-decoration: none; 
     box-shadow: 0 10px 25px rgba(0,0,0,0.05);
     border: 1px solid rgba(215, 180, 158, 0.2);
     transition: 0.3s ease;
@@ -272,7 +270,7 @@ section, .home, .skills, .about-section, .project-section, .contact-section {
     flex-shrink: 0;
 }
 
-/* WARNA TEKS COKELAT TEGAS (BUKAN BIRU) */
+/* WARNA TEKS COKELAT TEGAS */
 .contact-item p {
     font-size: 17px;
     font-weight: 500;
@@ -280,10 +278,11 @@ section, .home, .skills, .about-section, .project-section, .contact-section {
     margin: 0;
 }
 
-/* ================= RESPONSIVE ================= */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .nav { gap: 15px; padding: 10px 20px; }
   .home { flex-direction: column-reverse; text-align: center; padding-top: 120px; }
   .about-container, .skills-list { grid-template-columns: 1fr; }
   .photo-shape { width: 280px; height: 280px; }
+
 }
